@@ -1,17 +1,11 @@
 <div class="container">
-<h1>C####</h1>
-<form>
-  <input #input1 (input)="number1($event)" type="text">
-  <br>
-  <br>
-  <input #input2 (input)="number2($event)" type="text">
-  <br>
-  <br>
-  <mat-form-field appearance="fill" floatLabel="never">
-    <mat-label></mat-label>
-    <input matInput placeholder="Ex. 9876" [(ngModel)]="panel1" (keypress)="restrict($event)" autocomplete="off" >
-  </mat-form-field>
-<br>
+  <h1>C####</h1>
+  <input class="hide" [(ngModel)]="symbol" (input)="number1($event)" >
+  <input class="hide" [(ngModel)]="input2" (input)="number2($event)" >
+  <form>
+    <input class="main" autofocus [(ngModel)]="input1" (input)="number1($event)" >
+    <br>
+    <br>
   <button mat-raised-button>1</button>  <span>s</span>
   <button mat-raised-button>2</button>  <span>s</span>
   <button mat-raised-button>3</button>
@@ -44,6 +38,3 @@
 </div>
 <br>
 
-<mat-label [(ngModel)]="panel1">:{{panel1}}</mat-label>
-<br>
-<input [(ngModel)]="panel1" >

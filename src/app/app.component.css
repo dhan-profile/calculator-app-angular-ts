@@ -1,3 +1,26 @@
 span{
 visibility: hidden;
 }
+
+.mat-card{
+    margin-left: 560px;
+    width: 200px;
+    background: #28282b;
+    color: white;
+    font-family: 'Poppins', sans-serif; text-align: right;
+    min-height: 25px;
+}
+
+.hide{
+    display: none;
+}
+
+.main{
+    background: #28282b;
+    text-align: right;
+    color: white;
+    font-family: 'Poppins', sans-serif; text-align: right;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 6px;
+}

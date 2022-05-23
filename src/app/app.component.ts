@@ -12,6 +12,7 @@ export class AppComponent {
   panel1:any = null;
   input1:any;
   input2:any;
+  symbol:any;
   num1!: number;
   num2!: number;
   addition:any;

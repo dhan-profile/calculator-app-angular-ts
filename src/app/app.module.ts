@@ -7,7 +7,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input'
-import { MatLabel } from '@angular/material/form-field/label';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { MatLabel } from '@angular/material/form-field/label';
     FormsModule,
     MatButtonModule,
     MatInputModule,
-    
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
