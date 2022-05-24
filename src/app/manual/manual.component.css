@@ -1,0 +1,18 @@
+.main{
+    background: #28282b;
+    text-align: right;
+    color: white;
+    font-family: 'Poppins', sans-serif; text-align: right;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.ans{
+    background: wheat;
+    text-align: right;
+    color: #28282b;
+    font-family: 'Poppins', sans-serif; text-align: right;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 6px;
+}

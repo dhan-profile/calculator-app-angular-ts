@@ -1,9 +1,8 @@
-<div class="container">
+<!-- <div class="container">
   <h1>C####</h1>
-  <input class="hide" [(ngModel)]="symbol" (input)="number1($event)" >
-  <input class="hide" [(ngModel)]="input2" (input)="number2($event)" >
+
+  <input class="main" autofocus [(ngModel)]="input1" (input)="number1($event)" >
   <form>
-    <input class="main" autofocus [(ngModel)]="input1" (input)="number1($event)" >
     <br>
     <br>
   <button mat-raised-button>1</button>  <span>s</span>
@@ -28,13 +27,13 @@
 <br>
   <button mat-raised-button>*</button>  <span>s</span>
   <button mat-raised-button>%</button>  <span>s</span>
-  <button mat-raised-button color="accent" type="reset">AC</button>
+  <button mat-raised-button color="accent" type="reset" (click)="reset()">AC</button>
   <br>
   <br>
     <button mat-raised-button color="warn" type="reset" (click)="reset()">DEL</button>
     <span  >space</span>
     <button mat-raised-button color="primary" (click)="total()">ENTER</button>
 </form>
-</div>
+</div> -->
 <br>
-
+<app-manual></app-manual>

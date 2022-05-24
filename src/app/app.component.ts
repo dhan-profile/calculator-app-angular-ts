@@ -20,9 +20,7 @@ export class AppComponent {
   number1(event: any){
     this.num1 = event.target.value; 
   }
-  number2(event: any){
-    this.num2 = event.target.value; 
-  }
+
   add(){
     debugger;
     this.addclick = true;
@@ -38,6 +36,7 @@ export class AppComponent {
   }
   reset(){
     this.panel1="";
+    this.num1=0;
   }
 
   restrict(event: any) {
