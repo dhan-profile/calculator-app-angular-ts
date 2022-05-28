@@ -2,26 +2,26 @@
 
 <div class="container">
     <div class="row">
-        <input class="main" matInput> <mat-label> + </mat-label>
-        <input class="main" matInput> <mat-label> = </mat-label>
-        <input class="ans" matInput>
+        <input class="main" matInput [(ngModel)]="add1"> <mat-label> + </mat-label>
+        <input class="main" matInput [(ngModel)]="add2" (keyup)="add()"> <mat-label> = </mat-label>
+        <input class="ans" matInput [(ngModel)]="addResult" disabled>
     </div>
     <br>
     <div class="row">
-        <input class="main" matInput> <mat-label> - </mat-label>
-        <input class="main" matInput> <mat-label> = </mat-label>
-        <input class="ans" matInput>
+        <input class="main" matInput [(ngModel)]="sub1"> <mat-label> - </mat-label>
+        <input class="main" matInput [(ngModel)]="sub2" (keyup)="sub()"> <mat-label> = </mat-label>
+        <input class="ans" matInput [(ngModel)]="subResult" disabled>
     </div>
     <br>
     <div class="row">
-        <input class="main" matInput> <mat-label> * </mat-label>
-        <input class="main" matInput> <mat-label> = </mat-label>
-        <input class="ans" matInput>
+        <input class="main" matInput [(ngModel)]="multi1"> <mat-label> * </mat-label>
+        <input class="main" matInput [(ngModel)]="multi2" (keyup)="multi()"> <mat-label> = </mat-label>
+        <input class="ans" matInput [(ngModel)]="multiResult" disabled>
     </div>
     <br>
     <div class="row">
-        <input class="main" matInput> <mat-label> / </mat-label>
-        <input class="main" matInput> <mat-label> = </mat-label>
-        <input class="ans" matInput>
+        <input class="main" matInput [(ngModel)]="div1"> <mat-label> / </mat-label>
+        <input class="main" matInput [(ngModel)]="div2" (keyup)="div()"> <mat-label> = </mat-label>
+        <input class="ans" matInput [(ngModel)]="divResult" disabled>
     </div>
 </div>

@@ -1,18 +1,21 @@
 .main{
     background: #28282b;
-    text-align: right;
+    text-align: center;
     color: white;
-    font-family: 'Poppins', sans-serif; text-align: right;
+    font-family: 'Poppins', sans-serif; text-align: center;
     height: 45px;
     font-size: 15px;
     border-radius: 6px;
 }
 .ans{
     background: wheat;
-    text-align: right;
+    text-align: center;
     color: #28282b;
-    font-family: 'Poppins', sans-serif; text-align: right;
+    font-family: 'Poppins', sans-serif; text-align: center;
     height: 45px;
     font-size: 15px;
     border-radius: 6px;
+}
+mat-label{
+    font-size: 1.5rem;
 }
