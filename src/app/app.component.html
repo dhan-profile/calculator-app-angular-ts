@@ -1,26 +1,50 @@
-   <mat-drawer-container class="example-container" >
-    <mat-drawer #drawer ><br><br>
-      <button mat-raised-button color="accent" [routerLink]="'/home'">Home</button><br><br>
-        <button mat-raised-button color="primary" [routerLink]="'/manual'">Simple Calculator</button><br><br>
-        <button mat-raised-button>Interest Calculator</button><br><br>
-        <button mat-raised-button>Loan Calculator</button><br><br>
-        <button mat-raised-button>Age Calculator</button><br><br>
-        <button mat-raised-button>Conversion Calculator</button><br><br>
-        <button mat-raised-button color="primary" [routerLink]="'/about'">About us</button><br><br>
-        <button mat-raised-button>Contact us</button><br><br>
-    </mat-drawer>
-    <mat-drawer-content>
-      <button mat-raised-button (click)="drawer.toggle()" style="position: fixed;">
-        <mat-icon aria-hidden="false" >
-            <svg viewBox="0 0 120 90" width="30" height="20">
-                <rect width="120" height="20" rx="8"></rect>
-                <rect y="30" width="120" height="20" rx="8"></rect>
-                <rect y="60" width="120" height="20" rx="8"></rect>
-              </svg>
-        </mat-icon>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer><br><br>
+    <button mat-raised-button color="accent" [routerLink]="'/home'">Home</button><br><br>
+    <button mat-raised-button color="primary" [routerLink]="'/manual'" (click)="calculator()">Simple Calculator</button><br><br>
+    <button mat-raised-button>Interest Calculator</button><br><br>
+    <button mat-raised-button>Loan Calculator</button><br><br>
+    <button mat-raised-button>Age Calculator</button><br><br>
+    <button mat-raised-button>Conversion Calculator</button><br><br>
+    <button mat-raised-button color="primary" [routerLink]="'/about'">About us</button><br><br>
+    <button mat-raised-button>Contact us</button><br><br>
+  </mat-drawer>
+  <mat-drawer-content>
+    <button mat-raised-button (click)="drawer.toggle()" style="position: fixed;">
+      <mat-icon aria-hidden="false">
+        <svg viewBox="0 0 120 90" width="30" height="20">
+          <rect width="120" height="20" rx="8"></rect>
+          <rect y="30" width="120" height="20" rx="8"></rect>
+          <rect y="60" width="120" height="20" rx="8"></rect>
+        </svg>
+      </mat-icon>
     </button>
-
     <router-outlet></router-outlet>
+    <div *ngIf="calcButton; then displayNone else displayPage"> </div>
+    <ng-template #displayNone></ng-template>
+      <ng-template #displayPage>
+        <h1>Hello!👋</h1><br>
+        <h1>Welcome</h1><br>
+        <h2>Use side menu to navigate 👈</h2>
+      <br><br>
+      <p style="visibility: hidden;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit natus aliquid
+        consequuntur in maiores ullam vitae error, ab neque distinctio minima nam, eos tempora inventore facere quasi amet
+        commodi officiis, ex alias. Vel iusto voluptate doloremque architecto, laudantium nobis. Consectetur maiores
+        possimus at quae itaque, et sequi laboriosam, voluptatum velit suscipit quidem ipsam fuga quam qui dolores
+        architecto ut rerum? Hic esse fugiat pariatur quas laborum sunt ipsam nobis at! Quam perferendis sapiente pariatur
+        atque aperiam soluta fuga aliquid dolor, quasi molestiae repellat quas itaque animi unde obcaecati aliquam ea
+        adipisci ad est enim et? Aspernatur animi nihil non molestiae est quidem, nostrum asperiores iste error odit
+        laudantium rerum eos nisi praesentium numquam, magni, inventore unde facilis iusto dolorem adipisci? Nemo,
+        debitis. Quasi fuga consectetur praesentium incidunt at dicta corrupti voluptates officia ratione excepturi natus
+        doloremque obcaecati cum molestias, ullam nobis! Voluptate vero facilis eum unde harum repellendus, aliquam dolor
+        animi excepturi dolore corporis enim laboriosam cumque saepe asperiores provident explicabo possimus libero
+        similique illo eos quo! Quo dicta non repellendus veritatis, voluptates porro nihil ut a cupiditate laborum
+        repudiandae laboriosam facere inventore ipsum corporis dolorum aliquid adipisci perspiciatis quisquam fuga
+        molestiae? Pariatur consequuntur dolor, delectus quos adipisci a similique autem temporibus labore neque.
+        Exercitationem, cum perferendis similique voluptatum excepturi hic eum nisi quibusdam laborum reprehenderit libero
+        illum molestiae adipisci, totam veniam eos atque cumque corrupti natus. Odit repudiandae voluptate ipsam sed dolor
+        fugit in iste fuga,labore quos aperiam similique voluptatibus, qui natus exFugit rem maiores sint veniam ali</p>
+      </ng-template>
 
   </mat-drawer-content>
 </mat-drawer-container>

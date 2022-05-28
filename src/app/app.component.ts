@@ -17,6 +17,7 @@ export class AppComponent {
   num2!: number;
   addition:any;
   addclick:boolean = false;
+  calcButton: boolean = false;
   number1(event: any){
     this.num1 = event.target.value; 
   }
@@ -48,5 +49,8 @@ export class AppComponent {
     }
   }
 
+  calculator(){
+    this.calcButton = true
+  }
 
 }
