@@ -1,11 +1,12 @@
    <mat-drawer-container class="example-container" >
     <mat-drawer #drawer ><br><br>
-        <button mat-raised-button color="primary">Simple Calculator</button><br><br>
+      <button mat-raised-button color="accent" [routerLink]="'/home'">Home</button><br><br>
+        <button mat-raised-button color="primary" [routerLink]="'/manual'">Simple Calculator</button><br><br>
         <button mat-raised-button>Interest Calculator</button><br><br>
         <button mat-raised-button>Loan Calculator</button><br><br>
         <button mat-raised-button>Age Calculator</button><br><br>
         <button mat-raised-button>Conversion Calculator</button><br><br>
-        <button mat-raised-button>About us</button><br><br>
+        <button mat-raised-button color="primary" [routerLink]="'/about'">About us</button><br><br>
         <button mat-raised-button>Contact us</button><br><br>
     </mat-drawer>
     <mat-drawer-content>
@@ -18,8 +19,8 @@
               </svg>
         </mat-icon>
     </button>
-    
-    <app-manual></app-manual>
+
+    <router-outlet></router-outlet>
 
   </mat-drawer-content>
 </mat-drawer-container>
