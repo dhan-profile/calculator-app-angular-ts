@@ -1,27 +1,47 @@
-<p>manual works!</p>
+<h1>Calc</h1>
 
 <div class="container">
     <div class="row">
-        <input class="main" matInput [(ngModel)]="add1"> <mat-label> + </mat-label>
-        <input class="main" matInput [(ngModel)]="add2" (keyup)="add()"> <mat-label> = </mat-label>
+        <input class="main" matInput [(ngModel)]="add1" (keyup)="add()">
+        <mat-label> + </mat-label>
+        <input class="main" matInput [(ngModel)]="add2" (keyup)="add()">
+        <mat-label> = </mat-label><br><br>
         <input class="ans" matInput [(ngModel)]="addResult" disabled>
     </div>
-    <br>
+ 
     <div class="row">
-        <input class="main" matInput [(ngModel)]="sub1"> <mat-label> - </mat-label>
-        <input class="main" matInput [(ngModel)]="sub2" (keyup)="sub()"> <mat-label> = </mat-label>
+        <input class="main" matInput [(ngModel)]="sub1" (keyup)="sub()">
+        <mat-label> - </mat-label>
+        <input class="main" matInput [(ngModel)]="sub2" (keyup)="sub()">
+        <mat-label> = </mat-label><br><br>
         <input class="ans" matInput [(ngModel)]="subResult" disabled>
     </div>
-    <br>
+ 
     <div class="row">
-        <input class="main" matInput [(ngModel)]="multi1"> <mat-label> * </mat-label>
-        <input class="main" matInput [(ngModel)]="multi2" (keyup)="multi()"> <mat-label> = </mat-label>
+        <input class="main" matInput [(ngModel)]="multi1" (keyup)="multi()">
+        <mat-label> * </mat-label>
+        <input class="main" matInput [(ngModel)]="multi2" (keyup)="multi()">
+        <mat-label> = </mat-label><br><br>
         <input class="ans" matInput [(ngModel)]="multiResult" disabled>
     </div>
-    <br>
+
     <div class="row">
-        <input class="main" matInput [(ngModel)]="div1"> <mat-label> / </mat-label>
-        <input class="main" matInput [(ngModel)]="div2" (keyup)="div()"> <mat-label> = </mat-label>
+        <input class="main" matInput [(ngModel)]="div1" (keyup)="div()">
+        <mat-label> / </mat-label>
+        <input class="main" matInput [(ngModel)]="div2" (keyup)="div()">
+        <mat-label> = </mat-label><br><br>
         <input class="ans" matInput [(ngModel)]="divResult" disabled>
+    </div>
+
+    <div class="row">
+        <input class="main" matInput [(ngModel)]="mod1" (keyup)="mod()">
+        <mat-label> % </mat-label>
+        <input class="main" matInput [(ngModel)]="mod2" (keyup)="mod()">
+        <mat-label> = </mat-label><br><br>
+        <input class="ans" matInput [(ngModel)]="modResult" disabled>
+    </div>
+
+    <div class="row">
+<button mat-raised-button color="warn" (click)="reset()">Reset</button>
     </div>
 </div>

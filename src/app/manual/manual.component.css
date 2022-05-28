@@ -1,21 +1,40 @@
 .main{
-    background: #28282b;
+    /* background: #28282b;
+    color: white; */
+    background: wheat;
+    color: #28282b;
     text-align: center;
-    color: white;
     font-family: 'Poppins', sans-serif; text-align: center;
     height: 45px;
+    width: 120px;
     font-size: 15px;
     border-radius: 6px;
 }
 .ans{
-    background: wheat;
+    background: #28282b;
+    color: white;
+    /* background: wheat;
+    color: #28282b; */
     text-align: center;
-    color: #28282b;
     font-family: 'Poppins', sans-serif; text-align: center;
     height: 45px;
+    width: 120px;
     font-size: 15px;
     border-radius: 6px;
 }
 mat-label{
     font-size: 1.5rem;
+}
+h1{
+    font-weight: 600;
+}
+.container{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.row{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
