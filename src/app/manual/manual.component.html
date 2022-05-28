@@ -2,42 +2,47 @@
 
 <div class="container">
     <div class="row">
+        <mat-label> Add </mat-label><br><br>
         <input class="main" matInput [(ngModel)]="add1" (keyup)="add()">
         <mat-label> + </mat-label>
         <input class="main" matInput [(ngModel)]="add2" (keyup)="add()">
-        <mat-label> = </mat-label><br><br>
+        <br><br>
         <input class="ans" matInput [(ngModel)]="addResult" disabled>
     </div>
  
     <div class="row">
+        <mat-label> Subtract </mat-label><br><br>
         <input class="main" matInput [(ngModel)]="sub1" (keyup)="sub()">
         <mat-label> - </mat-label>
         <input class="main" matInput [(ngModel)]="sub2" (keyup)="sub()">
-        <mat-label> = </mat-label><br><br>
+        <br><br>
         <input class="ans" matInput [(ngModel)]="subResult" disabled>
     </div>
  
     <div class="row">
+        <mat-label> Multiply </mat-label><br><br>
         <input class="main" matInput [(ngModel)]="multi1" (keyup)="multi()">
         <mat-label> * </mat-label>
         <input class="main" matInput [(ngModel)]="multi2" (keyup)="multi()">
-        <mat-label> = </mat-label><br><br>
+        <br><br>
         <input class="ans" matInput [(ngModel)]="multiResult" disabled>
     </div>
 
     <div class="row">
+        <mat-label> Divide </mat-label><br><br>
         <input class="main" matInput [(ngModel)]="div1" (keyup)="div()">
         <mat-label> / </mat-label>
         <input class="main" matInput [(ngModel)]="div2" (keyup)="div()">
-        <mat-label> = </mat-label><br><br>
+        <br><br>
         <input class="ans" matInput [(ngModel)]="divResult" disabled>
     </div>
 
     <div class="row">
+        <mat-label> Modulo </mat-label><br><br>
         <input class="main" matInput [(ngModel)]="mod1" (keyup)="mod()">
         <mat-label> % </mat-label>
         <input class="main" matInput [(ngModel)]="mod2" (keyup)="mod()">
-        <mat-label> = </mat-label><br><br>
+        <br><br>
         <input class="ans" matInput [(ngModel)]="modResult" disabled>
     </div>
 

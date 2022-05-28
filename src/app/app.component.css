@@ -24,3 +24,32 @@ visibility: hidden;
     font-size: 15px;
     border-radius: 6px;
 }
+.mat-toolbar{
+    background-color: #28282b;
+    color: white;
+  }
+  .spacer{
+    flex: 1 1 auto;
+  }
+  .mat-button{
+    color: white;
+ }
+ 
+ .example-container {
+    width: 400px;
+    height: auto;
+    margin: 0;
+    border: 1px solid #555;
+  }
+  
+  mat-drawer-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  mat-drawer{
+      width: auto;   
+  }
+  

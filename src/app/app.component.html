@@ -1,3 +1,22 @@
-
+   <mat-drawer-container class="example-container" >
+    <mat-drawer #drawer >
+        <button mat-raised-button>Simple Calculator</button><br>
+        <button mat-raised-button>Interest Calculator</button><br>
+        <button mat-raised-button>Loan Calculator</button><br>
+        <button mat-raised-button>Age Calculator</button><br>
+        <button mat-raised-button>Conversion Calculator</button><br>
+    </mat-drawer>
+    <mat-drawer-content>
+      <button mat-raised-button (click)="drawer.toggle()" style="position: fixed;">
+        <mat-icon aria-hidden="false" >
+            <svg viewBox="0 0 120 90" width="30" height="20">
+                <rect width="120" height="20" rx="8"></rect>
+                <rect y="30" width="120" height="20" rx="8"></rect>
+                <rect y="60" width="120" height="20" rx="8"></rect>
+              </svg>
+        </mat-icon>
+    </button>
+      <app-manual></app-manual>
+    </mat-drawer-content>
+  </mat-drawer-container>
 <br>
-<app-manual></app-manual>
