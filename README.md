@@ -14,7 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Calculations it does:
+## 🔢 Calculations it does:
 
 - Simple Calculator
 - Interest rate calculator
@@ -22,6 +22,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 - Age calculator
 - Conversion calculator
 
-## Inspired by
+## 🔍 Inspired by
 
 [Calculator.net](https://www.calculator.net/)
